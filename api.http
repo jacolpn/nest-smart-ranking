@@ -1,0 +1,29 @@
+// Para utilizar, installar extensão "REST Client - Huachao Mao".
+
+GET http://localhost:8080/api/v1/jogadores HTTP/1.1
+
+###
+
+GET http://localhost:8080/api/v1/jogadores?email=jacoLPN@outlook.com HTTP/1.1
+
+###
+
+POST http://localhost:8080/api/v1/jogadores HTTP/1.1
+content-type: application/json
+
+{
+    "telefoneCelular": "47988458640",
+    "email": "jacoLPN@outlook.com",
+    "nome": "Jackson Neves",
+    "ranking": "A",
+    "posicaoRanking ": "1",
+    "urlFotoJogador": "www.google.com.br"
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/jogadores?email=jacoLPN@outlook.com HTTP/1.1
+
+###
+
+###
