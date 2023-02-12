@@ -71,3 +71,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+# Mongo DB:
+## Mongo Compass: https://www.mongodb.com/try/download/compass
+    mongodb+srv://jaconeves:<password>@cluster0.bcegson.mongodb.net/?retryWrites=true&w=majority
+    npm install @nestjs/mongoose mongoose
+    npm install --save-dev @types/mongoose
