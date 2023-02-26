@@ -4,7 +4,8 @@ GET http://localhost:8080/api/v1/jogadores HTTP/1.1
 
 ###
 
-GET http://localhost:8080/api/v1/jogadores?email=jacoLPN@outlook.com HTTP/1.1
+GET http://localhost:8080/api/v1/jogadores/63fbae2e58a27ec96f526d30 HTTP/1.1
+# GET http://localhost:8080/api/v1/jogadores?email=jacoLPN@outlook.com HTTP/1.1
 
 ###
 
@@ -13,7 +14,7 @@ content-type: application/json
 
 {
     "telefoneCelular": "47988458640",
-    "email": "jacoLPN@outlook.com",
+    "email": "jacoLPN2@outlook.com",
     "nome": "Jackson Neves",
     "ranking": "A",
     "posicaoRanking ": "1",
@@ -22,8 +23,16 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:8080/api/v1/jogadores?email=jacoLPN@outlook.com HTTP/1.1
+PUT http://localhost:8080/api/v1/jogadores/63fbb053922339365e07fc3a HTTP/1.1
+content-type: application/json
+
+{
+    "telefoneCelular": "47988458640",
+    "nome": "Jackson Neves"
+}
 
 ###
+
+DELETE http://localhost:8080/api/v1/jogadores/63fbae2e58a27ec96f526d30 HTTP/1.1
 
 ###
