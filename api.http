@@ -36,3 +36,45 @@ content-type: application/json
 DELETE http://localhost:8080/api/v1/jogadores/63fbae2e58a27ec96f526d30 HTTP/1.1
 
 ###
+
+// Criar categoria.
+POST http://localhost:8080/api/v1/categorias HTTP/1.1
+content-type: application/json
+
+{
+    "categoria": "A",
+    "descricao": "Categoria A",
+    "eventos": [
+        { "nome": "Vitoria", "operacao": "+", "valor": 30 },
+        { "nome": "Vitoria_Lider", "operacao": "+", "valor": 50 },
+        { "nome": "Derrota", "operacao": "+", "valor": 0 }
+    ]
+}
+
+###
+
+// Buscar todas as categorias.
+GET http://localhost:8080/api/v1/categorias HTTP/1.1
+
+###
+
+// Buscar categoria pelo name.
+GET http://localhost:8080/api/v1/categorias/A
+
+###
+
+POST http://localhost:8080/api/v1/categorias/A/jogadores/63fbb053922339365e07fc3a
+
+###
+
+PUT http://localhost:8080/api/v1/categorias/A HTTP/1.1
+content-type: application/json
+
+{
+    "descricao": "Categoria A",
+    "eventos": [
+        { "nome": "Vitoria", "operacao": "+", "valor": 10 },
+        { "nome": "Vitoria_Lider", "operacao": "+", "valor": 80 },
+        { "nome": "Derrota", "operacao": "+", "valor": 0 }
+    ]
+}
